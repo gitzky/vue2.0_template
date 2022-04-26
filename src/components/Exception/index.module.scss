@@ -1,0 +1,36 @@
+.exception {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 120px 200px 20px;
+  background-color: #fff;
+  .imgEle {
+    height: 320px;
+    width: 600px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .content {
+    position: absolute;
+    left: 575px;
+    h1 {
+      color: #434e59;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 72px;
+      margin: 20px;
+      text-align: left;
+    }
+
+    .desc {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+  }
+}

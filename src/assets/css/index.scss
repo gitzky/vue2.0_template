@@ -1,0 +1,352 @@
+@import '@/assets/css/lib/normalize.min.scss';
+
+
+// 主题颜色
+$theme-color: #89ceb1;
+$theme-color1: #89ceb1;
+
+// dom区域居中
+.w1500,
+.inner {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+// 清除浮动
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfix {
+
+  &:before,
+  &:after {
+    display: table;
+    content: ' ';
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// 显示 隐藏
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden,
+.hide {
+  display: none !important;
+}
+
+// 标签格式化
+em,
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*a , em ,i init*/
+a {
+  color: #666666;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: $theme-color;
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.pull-right,
+.right {
+  float: right;
+}
+
+.pull-left,
+.left {
+  float: left;
+}
+
+/* 字体排版布局 */
+.text-left,
+.t_left {
+  text-align: left;
+}
+
+.text-right,
+.t_right {
+  text-align: right;
+}
+
+.text-center,
+.t_center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.inlineBlock,
+.inline-block {
+  display: inline-block;
+}
+
+.over_hide,
+.over-hide {
+  overflow: hidden;
+}
+
+.vertical_m {
+  vertical-align: middle;
+}
+
+.vertical_t {
+  vertical-align: top;
+}
+
+.flex {
+  display: flex;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.normal {
+  font-weight: normal;
+  margin: 0px;
+  word-wrap: break-word;
+}
+
+.fb,
+.f_bold {
+  font-weight: bold;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.l_through {
+  text-decoration: line-through;
+}
+
+.l_under {
+  text-decoration: underline;
+}
+
+/*color*/
+.c_color {
+  color: $theme-color;
+}
+
+.c_transparent {
+  color: transparent;
+}
+
+/*background*/
+.b_color {
+  background: $theme-color;
+}
+
+.b_white,
+.bg_fff {
+  background: #fff;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f21 {
+  font-size: 21px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f28 {
+  font-size: 28px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.f32 {
+  font-size: 30px;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.f40 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+/*border*/
+.border {
+  border: 1px solid #e8e8e8;
+}
+
+/*padding*/
+.pad5 {
+  padding: 5px;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.pad15 {
+  padding: 15px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+.pad30 {
+  padding: 30px;
+}
+
+/* margin */
+.mar0 {
+  margin: 0px;
+}
+
+.mar10 {
+  margin: 10px;
+}
+
+.mar20 {
+  margin: 20px;
+}
+
+.mar30 {
+  margin: 30px;
+}
+
+
+table {
+  width: 100%;
+  background: #fff;
+}
+
+table thead td {
+  background: #f5f5f5;
+  padding: 7px 15px;
+  border-right: 0px;
+  border: none;
+}
+
+/*img*/
+img {
+  vertical-align: middle;
+}
+
+/*垂直居中*/
+.flex-cont {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}

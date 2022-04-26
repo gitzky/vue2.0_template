@@ -1,0 +1,30 @@
+{
+  "name": "express-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve:test": "vue-cli-service serve --mode test",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "element-ui": "^2.12.0",
+    "node-sass": "^6.0.1",
+    "nprogress": "0.2.0",
+    "sass-loader": "^10.2.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

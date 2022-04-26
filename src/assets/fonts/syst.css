@@ -1,0 +1,9 @@
+
+
+/*font icon*/
+@font-face {
+  font-family: 'KaiGenGothicSC-Light';
+  src: url('./syst.otf');
+  font-weight: normal;
+  font-style: normal;
+}
